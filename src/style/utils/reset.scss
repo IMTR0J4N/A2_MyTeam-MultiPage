@@ -41,5 +41,10 @@ img, picture img, picture source, iframe {
 
 a {
     text-decoration: none;
-    color: black;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
 }
