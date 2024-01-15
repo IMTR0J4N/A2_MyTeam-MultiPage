@@ -1,0 +1,105 @@
+@import 'utils/reset';
+@import 'utils/variables';
+
+@import url('https://fonts.googleapis.com/css2?family=Livvic:wght@600;700&display=swap');
+
+* {
+  color: $pWhite;
+  font-family: $fontFamily;
+}
+
+
+body {
+  background-color: $pMidnightGreen;
+
+  header {
+    .header--navigation-container {
+      display: flex;
+      justify-content: space-between;
+      padding: 8% 5%;
+
+      img {
+        width: 10%;
+      }
+    }
+
+    .header--heading-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 10% 5%;
+
+      h2 {
+        font-size: $h2Size;
+        line-height: $h2Line;
+        text-align: center;
+
+        strong {
+          color: $pLightCoral;
+        }
+      }
+
+      h3 {
+        margin-top: 20px;
+        font-size: $h3Size;
+        line-height: $h3Line;
+        text-align: center;
+      }
+    }
+
+    .header--image-container {
+
+      display: flex;
+      justify-content: center;
+      img {
+        width: 95vw;
+        margin-bottom: 0px;
+      }
+    }
+  }
+
+  main {
+    background-color: $sSacramentoStateGreen;
+
+    .main--info-section {
+      padding: 15% 5%;
+
+      h2 {
+        margin-top: 50px;
+        font-size: 30px;
+        line-height: 30px;
+      }
+
+      img {
+        float: right;
+        transform: translate(60%, -25%);
+      }
+
+      hr {
+        margin-left: 0px;
+        border: $pLightCoral 2px solid;
+        width: 40px;
+      }
+
+      .section--article-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        margin-top: 30px;
+
+        article {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          img {
+            width: 72px;
+          }
+        }
+      }
+    }
+  }
+}
